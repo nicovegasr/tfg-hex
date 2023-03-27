@@ -1,8 +1,8 @@
  { 
   "name": "conductores",
-  "num_excel": "1",
-  "num_columnas": ["5"],  
-  "tipos_columnas": [["Datetime", "int", "Datetime", "Datetime", "int"]],
-  "nulls_permitidos": ["0"],
-  "descripcion_adicional": "Este algoritmo se encarga de minimizar el numero de conductores dado un dataset de viajes que parten de un punto A hacia un punto B."
+  "n_files": "1",
+  "n_cols": ["5"],  
+  "cols_types": [["Datetime", "int", "Datetime", "Datetime", "int"]],
+  "allowed_nulls": ["0"],
+  "aditional_description": "Este algoritmo se encarga de minimizar el numero de conductores dado un dataset de viajes que parten de un punto A hacia un punto B."
 } 
