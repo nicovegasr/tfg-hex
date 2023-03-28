@@ -19,5 +19,11 @@ class AvailableAlgorithmShould(unittest.TestCase):
                 response = client.get('/available_algorithms')
                 assert response.status_code == 404
 
+    def test_path_error_in_server(self):
+        with app.test_client() as client:
+            with patch('src.aplication.usecases.get_available_algorithms.get_available_algorithms', side_effect=ValueError("Something is wrong with algorithm path files")):
+                response = client.get('/available_algorithms')
+                assert response.status_code == 501
+
 if __name__ == '__main__':
     unittest.main()

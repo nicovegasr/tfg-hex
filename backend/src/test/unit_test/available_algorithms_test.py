@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 
 import config_modules
 config_modules.add()
@@ -12,8 +13,19 @@ class AvailableAlgorithmsShould(unittest.TestCase):
         algorithms = get_available_algorithms().index("drivers")
         self.assertEqual(type(algorithms), int)
 
-    def test_no_algorithm_in(self) -> None:
-        self.assertRaises(ValueError, get_available_algorithms().index, "Non-existent")
+
+    @patch('aplication.usecases.get_available_algorithms.os.listdir')
+    def test_empty_list_algorithms(self, mock_listdir) -> None:
+        mock_listdir.return_value = []
+        self.assertListEqual(get_available_algorithms(), [])
+
+
+
+    @patch('aplication.usecases.get_available_algorithms.os.listdir')
+    def test_no_algorithm_in(self, mock_listdir) -> None:
+        mock_listdir.side_effect = ValueError("Something is wrong with algorithm path files")
+        with self.assertRaises(ValueError):
+            get_available_algorithms()
 
 
 if __name__ == '__main__':
