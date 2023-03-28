@@ -21,7 +21,7 @@ app.add_url_rule('/available_algorithms', 'available_algorithms', available_algo
 app.add_url_rule('/configuration_file', 'configuration_file', configuration_file, methods=['GET'])
 app.add_url_rule('/performance_algorithm', 'performance_algorithm', performance_algorithm, methods=['POST'])
 app.add_url_rule('/description', 'description', description, methods=['GET'])
-app.add_url_rule('/process_files', 'process_files', process_files, methods=['GET'])
+app.add_url_rule('/process_files', 'process_files', process_files, methods=['POST'])
 
 
 if __name__ == '__main__':
