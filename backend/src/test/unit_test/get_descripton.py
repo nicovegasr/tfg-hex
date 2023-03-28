@@ -14,8 +14,8 @@ class DescriptionAlgorithmShould(unittest.TestCase):
         self.assertEquals(len(description), 2)
 
     def test_get_not_existent_algorithm_description(self) -> None:
-        description = get_algorithm_description("drivers")
-        self.assertEquals(len(description), 0)
+        self.assertRaises(ValueError, get_algorithm_description, "Non-existent")
+
 
 
 if __name__ == '__main__':

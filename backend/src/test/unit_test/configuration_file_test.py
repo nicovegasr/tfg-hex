@@ -13,7 +13,7 @@ class ConfigurationFileShould(unittest.TestCase):
         self.assertEqual(type(algorithms), dict)
 
     def test_get_no_configuration_file(self) -> None:    
-        self.assertEqual(get_configuration_file("Non-existent"), "")
+        self.assertRaises(ValueError, get_configuration_file, "Non-existent")
 
 if __name__ == '__main__':
     unittest.main()
