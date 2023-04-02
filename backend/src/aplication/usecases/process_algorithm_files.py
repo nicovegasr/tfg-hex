@@ -21,7 +21,7 @@ def process_algorithm_files(files: dict) -> str or list:
       if (not is_excel) and (not is_csv):
          filename_result = file["name"]
          raise ValueError(f"File {filename_result}: not supported type.") 
-      file["file_content"] = decoded_file.to_string()
+      file["file_content"] = decoded_file.to_json()
     return files
 
 

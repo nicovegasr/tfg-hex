@@ -14,3 +14,5 @@ async def process_files():
         return make_response(processed_files,200)
     except ValueError as Error:
         return make_response(str(Error), 406)
+    except Exception as Error:
+        return make_response("Something gone wrong with your body request, check it and try again.", 400)
