@@ -10,7 +10,7 @@
 ## **Trazabilidad añadiendo nuevo algoritmo**
 
 ## **Testing**
-![Flujo de endpoints para la conexcion con el frontend](/docs/images/test.png)
+![Flujo de endpoints para la conexcion con el frontend](./docs/images/test.png)
 
 ## **Estructura de los archivos de configuración**
 ```json
