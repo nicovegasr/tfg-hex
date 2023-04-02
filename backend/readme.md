@@ -1,8 +1,8 @@
 # **Trabajo final de grado**
 
-![Planteamieto de la arquitectura hexagonal en el backend](/docs/images/backend_hex.png)
+![Planteamieto de la arquitectura hexagonal en el backend](./docs/images/backend_hex.png)
 
-![Flujo de endpoints para la conexcion con el frontend](/docs/images/flujo_front.png)
+![Flujo de endpoints para la conexcion con el frontend](./docs/images/flujo_front.png)
 
 
 ## **Explicacion general**
