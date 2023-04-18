@@ -1,0 +1,82 @@
+#description {
+  flex: 2;  
+  margin: 10px;
+  opacity: 0.8;
+  background: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 10px #000000;
+
+  /* Antes se necesitaba pero se ve que ahora no for some unknow reason. 
+  word-wrap: break-word;
+  overflow: hidden; */
+
+}
+
+.descripcion-titulo {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 2px;
+  font-size: calc(0.5em + 0.5vw);
+}
+
+.descripcion-cuerpo {
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: calc(0.5em + 0.5vw);
+}
+
+.descripcion-error {
+  color: red;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.descripcion-valor {
+  color: rgb(0, 255, 0);
+  text-decoration: underline;
+}
+
+/* A partir de aqui son los estilos del componente upload-file*/
+
+.files {
+  font-size: calc(0.5em + 0.5vw);
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 20px 0px;
+  height: 60px;
+  place-content: center;
+}
+
+.upload-file {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  background-color: rgb(62, 62, 62);
+  border-radius: 5px;
+  color: white;
+
+  text-align: center;
+  }
+
+.upload-message {
+  height: 100%;
+  margin-left: 3px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 5px;
+  background-color: rgb(106, 106, 106);
+  color: greenyellow;
+}
+
+.upload-file:hover {
+  color: greenyellow;
+  border: solid greenyellow 2px;
+}

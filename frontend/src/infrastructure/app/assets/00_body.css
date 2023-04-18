@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    background: rgb(196, 196, 196);
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.zona1 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}

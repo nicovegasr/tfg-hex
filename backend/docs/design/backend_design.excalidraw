@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://excalidraw.com",
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
       "type": "rectangle",
@@ -36,8 +36,8 @@
     },
     {
       "type": "text",
-      "version": 573,
-      "versionNonce": 1414261759,
+      "version": 574,
+      "versionNonce": 1687661283,
       "isDeleted": false,
       "id": "24N5D77oGR4AFleA-j94p",
       "fillStyle": "hachure",
@@ -59,7 +59,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186286,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -69,12 +69,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Flujo de conexión con el Frontend:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 1079,
-      "versionNonce": 1471682417,
+      "version": 1080,
+      "versionNonce": 305604813,
       "isDeleted": false,
       "id": "Taghgb4rEg8eZMbSFX1xr",
       "fillStyle": "hachure",
@@ -97,7 +98,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186290,
       "link": null,
       "locked": false,
       "fontSize": 18.72132750466858,
@@ -107,12 +108,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Tercera petición: Procesar archivos.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 16
     },
     {
       "type": "text",
-      "version": 1218,
-      "versionNonce": 822875167,
+      "version": 1219,
+      "versionNonce": 784750211,
       "isDeleted": false,
       "id": "pqd_cfQrQfwF2Fz9gtFQ3",
       "fillStyle": "hachure",
@@ -135,7 +137,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186293,
       "link": null,
       "locked": false,
       "fontSize": 18.72132750466858,
@@ -145,12 +147,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "La idea es que le pasaremos archivos de la siguiente forma:\n\n body {\n        \"file_1\" : { \"filename\" : \"name\", \"file_content\" : \"content\"},\n        ...\n        \"file_{i} :   { \"filename\" : \"name\", \"file_content\" : \"content\"}\n      }",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 156
     },
     {
       "type": "text",
-      "version": 1182,
-      "versionNonce": 1149632849,
+      "version": 1183,
+      "versionNonce": 1213368109,
       "isDeleted": false,
       "id": "56V_g6vHQCXwBljaY2I_x",
       "fillStyle": "hachure",
@@ -173,7 +176,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186294,
       "link": null,
       "locked": false,
       "fontSize": 18.72132750466858,
@@ -183,7 +186,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Al llegar al backend se hara un sort para procesar los archivos en orden\ny se devolverán de la misma manera. Al llegar al front tendrá que hacerse el \nmismo sort por el nombre para que luego no hallan problemas.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 63
     },
     {
       "type": "rectangle",
@@ -219,8 +223,8 @@
     },
     {
       "type": "text",
-      "version": 903,
-      "versionNonce": 398176049,
+      "version": 904,
+      "versionNonce": 22973987,
       "isDeleted": false,
       "id": "9YCNGSywqIDJw9Et7zXd0",
       "fillStyle": "hachure",
@@ -243,7 +247,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186297,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -253,7 +257,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Primera petición: Obtener algoritmos disponibles.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -289,8 +294,8 @@
     },
     {
       "type": "text",
-      "version": 1340,
-      "versionNonce": 935371025,
+      "version": 1341,
+      "versionNonce": 875764109,
       "isDeleted": false,
       "id": "C-BCiC-MRH07V8lAglbA6",
       "fillStyle": "hachure",
@@ -314,7 +319,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186299,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -324,12 +329,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se hará un request a la ruta correspondiente y se obtendrá un listado \ncon los algoritmos disponibles en el backend, en caso de estar vacia se \nretorna un 404.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 68
     },
     {
       "type": "text",
-      "version": 1101,
-      "versionNonce": 451048575,
+      "version": 1102,
+      "versionNonce": 793694659,
       "isDeleted": false,
       "id": "y6i4Na12kLB_n1UQlx0LW",
       "fillStyle": "hachure",
@@ -351,7 +357,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186300,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -361,7 +367,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Segunda petición: Obtener descripción de algoritmo seleccionado.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -396,8 +403,8 @@
     },
     {
       "type": "text",
-      "version": 1709,
-      "versionNonce": 1690143903,
+      "version": 1710,
+      "versionNonce": 1326604269,
       "isDeleted": false,
       "id": "ceSSPC6FqbfKZ1FlCiR3H",
       "fillStyle": "hachure",
@@ -420,7 +427,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160016,
+      "updated": 1681739186301,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -430,12 +437,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se hará un request a la ruta correspondiente y se obtendrá la descripción\ny la descripcion adicional aunque este vacia, en caso de exito = 200, \nfallo = 404 ya que hay un fallo del fichero de configuracion.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 68
     },
     {
       "type": "text",
-      "version": 670,
-      "versionNonce": 2032554193,
+      "version": 671,
+      "versionNonce": 699769187,
       "isDeleted": false,
       "id": "fg53Jj1MUsD6695HMQluo",
       "fillStyle": "hachure",
@@ -456,7 +464,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160017,
+      "updated": 1681739186303,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -466,12 +474,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 699,
-      "versionNonce": 1338024127,
+      "version": 700,
+      "versionNonce": 788126285,
       "isDeleted": false,
       "id": "lj0eWI9uh7KqH_dXFAY5_",
       "fillStyle": "hachure",
@@ -492,7 +501,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160017,
+      "updated": 1681739186304,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -502,12 +511,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 744,
-      "versionNonce": 44437169,
+      "version": 745,
+      "versionNonce": 971078915,
       "isDeleted": false,
       "id": "Mt9-WOBDD1a859BpppxZy",
       "fillStyle": "hachure",
@@ -528,7 +538,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160017,
+      "updated": 1681739186304,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -538,12 +548,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 1403,
-      "versionNonce": 1837904095,
+      "version": 1404,
+      "versionNonce": 1824721069,
       "isDeleted": false,
       "id": "emFt_H7RhA6XoaB7_EgNI",
       "fillStyle": "hachure",
@@ -566,7 +577,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160017,
+      "updated": 1681739186307,
       "link": null,
       "locked": false,
       "fontSize": 19.317513748743192,
@@ -576,12 +587,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Cuarta petición: Obtener fichero de configuracion.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 17
     },
     {
       "type": "text",
-      "version": 1671,
-      "versionNonce": 624103569,
+      "version": 1672,
+      "versionNonce": 2068898979,
       "isDeleted": false,
       "id": "cB0LJhOq-LQSqH5De5wWZ",
       "fillStyle": "hachure",
@@ -609,7 +621,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1680109160017,
+      "updated": 1681739186308,
       "link": null,
       "locked": false,
       "fontSize": 19.317513748743192,
@@ -619,7 +631,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se hará una request con el nombre del algoritmo\n seleccionado y se retornará su fichero de \nconfiguración con json.dumps()\n",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 89
     },
     {
       "type": "rectangle",
@@ -660,8 +673,8 @@
     },
     {
       "type": "text",
-      "version": 2599,
-      "versionNonce": 1451546225,
+      "version": 2600,
+      "versionNonce": 1243048717,
       "isDeleted": false,
       "id": "tqi7WxOEZ7ocyGMWpNUSz",
       "fillStyle": "hachure",
@@ -693,7 +706,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1680109160018,
+      "updated": 1681739186311,
       "link": null,
       "locked": false,
       "fontSize": 19.805292795146908,
@@ -703,12 +716,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "La validación del JSON de configuration se hará\n con un schema con la librería jsonschema y la \nfuncion validate.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 66
     },
     {
       "type": "text",
-      "version": 2252,
-      "versionNonce": 1638843679,
+      "version": 2253,
+      "versionNonce": 364009539,
       "isDeleted": false,
       "id": "MeozdXQ9cSLRnorv2uOUS",
       "fillStyle": "hachure",
@@ -731,7 +745,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160018,
+      "updated": 1681739186312,
       "link": null,
       "locked": false,
       "fontSize": 19.317513748743192,
@@ -741,7 +755,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Quinta petición: Obtener resultado.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 17
     },
     {
       "type": "rectangle",
@@ -884,8 +899,8 @@
     },
     {
       "type": "text",
-      "version": 840,
-      "versionNonce": 283724127,
+      "version": 841,
+      "versionNonce": 393249133,
       "isDeleted": false,
       "id": "sF3JJ6MpHkySEIs9P4fy6",
       "fillStyle": "hachure",
@@ -906,7 +921,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160018,
+      "updated": 1681739186313,
       "link": null,
       "locked": false,
       "fontSize": 31.248972239059235,
@@ -916,12 +931,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 27
     },
     {
       "type": "text",
-      "version": 750,
-      "versionNonce": 1144111121,
+      "version": 751,
+      "versionNonce": 920934371,
       "isDeleted": false,
       "id": "xDE6fLyCfNLS3nonVPxlD",
       "fillStyle": "hachure",
@@ -942,7 +958,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160018,
+      "updated": 1681739186314,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -952,7 +968,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "rectangle",
@@ -984,8 +1001,8 @@
     },
     {
       "type": "text",
-      "version": 372,
-      "versionNonce": 1550440521,
+      "version": 373,
+      "versionNonce": 1511508941,
       "isDeleted": false,
       "id": "91BtIDSoV_n3gm6XDgy_g",
       "fillStyle": "hachure",
@@ -1004,7 +1021,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074471,
+      "updated": 1681739186316,
       "link": null,
       "locked": false,
       "fontSize": 25.49658133260977,
@@ -1014,12 +1031,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Cosas a tener en cuenta:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1362,
-      "versionNonce": 1509256391,
+      "version": 1363,
+      "versionNonce": 1291150211,
       "isDeleted": false,
       "id": "U6o6W7XB4k12IGB3RLHjR",
       "fillStyle": "hachure",
@@ -1041,7 +1059,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074474,
+      "updated": 1681739186319,
       "link": null,
       "locked": false,
       "fontSize": 16.107359139687397,
@@ -1051,7 +1069,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "CONFIG_MODULES.PY\n-> En cada directorio de testing\n-> En server.py ",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "rectangle",
@@ -1113,8 +1132,8 @@
     },
     {
       "type": "text",
-      "version": 886,
-      "versionNonce": 2079975209,
+      "version": 887,
+      "versionNonce": 841402925,
       "isDeleted": false,
       "id": "D8wLGaty52VIBhfBBNT6b",
       "fillStyle": "hachure",
@@ -1133,7 +1152,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074478,
+      "updated": 1681739186323,
       "link": null,
       "locked": false,
       "fontSize": 14.16476740700543,
@@ -1143,12 +1162,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "\n-> Hacer un fichero en el root (creo que seria /backend o /src no lo tengo muy claro) de setup.py y setup.cfg con python \nsetup.py install (investigar mas adelante)\n     * En el fichero .cfg podemos especificar el manejo de modulos y de paquetes externos como json, jsonchema, pandas, etc.\n\n-> Hacer readme hablando de todo lo hecho y la arquitectura.\n\n-> Hacer un mini video sobre trazabilidad de como se implementa un algoritmo.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 136
     },
     {
       "type": "text",
-      "version": 463,
-      "versionNonce": 2058756575,
+      "version": 464,
+      "versionNonce": 2358051,
       "isDeleted": false,
       "id": "HWTrwXcpUd-vy5DA-4gi9",
       "fillStyle": "hachure",
@@ -1171,7 +1191,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160019,
+      "updated": 1681739186325,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1181,12 +1201,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Request:\n body {\n        \"algorithm_name\" = \"name\"\n        \"file_1\" : { \"filename\" : \"name\", \"file_content\" : \"content\"},\n        ...\n        \"file_{i} :   { \"filename\" : \"name\", \"file_content\" : \"content\"}\n      }",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 168
     },
     {
       "type": "text",
-      "version": 830,
-      "versionNonce": 1285336977,
+      "version": 831,
+      "versionNonce": 8846477,
       "isDeleted": false,
       "id": "P3pWR2KzFkA-LVk0sx8sB",
       "fillStyle": "hachure",
@@ -1209,7 +1230,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160019,
+      "updated": 1681739186326,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1219,12 +1240,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Return:\n      {   \n        \"file_restult_1\" : { \"file\" : \"name\", \"content\" : \"dataframe\"},\n        ...\n        \"file_{i} :   { \"file\" : \"name\", \"content\" : \"dataframe\"}\n      }\nNo deberia ya que en el flujo original este endpoint se llamará \ndespues de las comprobaciones pero haremos un try-except que en\ncaso de fallar la ejecucion del algoritmo retorne un status 500.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 218
     },
     {
       "type": "text",
-      "version": 301,
-      "versionNonce": 1180318695,
+      "version": 302,
+      "versionNonce": 1826528963,
       "isDeleted": false,
       "id": "kqbKF6OXjDU0evGdOTf5I",
       "fillStyle": "hachure",
@@ -1243,7 +1265,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074479,
+      "updated": 1681739186328,
       "link": null,
       "locked": false,
       "fontSize": 25.496581332609768,
@@ -1253,7 +1275,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Cosas a implementar:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "arrow",
@@ -1312,8 +1335,8 @@
     },
     {
       "type": "text",
-      "version": 444,
-      "versionNonce": 802190879,
+      "version": 445,
+      "versionNonce": 1290920685,
       "isDeleted": false,
       "id": "-nObidyVBROFUbViTRzY5",
       "fillStyle": "hachure",
@@ -1337,7 +1360,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1680109160020,
+      "updated": 1681739186329,
       "link": null,
       "locked": false,
       "fontSize": 36,
@@ -1347,12 +1370,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Va a estar compuesto de otro flujo:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 31
     },
     {
       "type": "text",
-      "version": 940,
-      "versionNonce": 1278263121,
+      "version": 941,
+      "versionNonce": 499371619,
       "isDeleted": false,
       "id": "DVHejyPJopjeH-FvPcADP",
       "fillStyle": "hachure",
@@ -1373,7 +1397,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160020,
+      "updated": 1681739186330,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1383,7 +1407,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "La idea del flujo es",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -1510,8 +1535,8 @@
     },
     {
       "type": "text",
-      "version": 223,
-      "versionNonce": 106159889,
+      "version": 224,
+      "versionNonce": 1810955597,
       "isDeleted": false,
       "id": "mPi7-RQTGyVWKjyIUM3ap",
       "fillStyle": "hachure",
@@ -1535,7 +1560,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1680109160020,
+      "updated": 1681739186330,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1545,12 +1570,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Controlador",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 18
     },
     {
       "type": "text",
-      "version": 611,
-      "versionNonce": 548017791,
+      "version": 612,
+      "versionNonce": 1168247299,
       "isDeleted": false,
       "id": "SowFYoqUHYZQ-Pb1yiRLs",
       "fillStyle": "hachure",
@@ -1569,7 +1595,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160020,
+      "updated": 1681739186333,
       "link": null,
       "locked": false,
       "fontSize": 11.83285617829223,
@@ -1579,7 +1605,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "try:\n    files = getBody and format to json.\n    result = get_algorithm_result(files)\n    return make_response(result, 200)\nexcept Exception as Error:\n    return make_response(str(Error), 500)",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 84
     },
     {
       "type": "arrow",
@@ -1673,8 +1700,8 @@
     },
     {
       "type": "text",
-      "version": 436,
-      "versionNonce": 1317146321,
+      "version": 437,
+      "versionNonce": 1692257197,
       "isDeleted": false,
       "id": "O11PDGq1AOfKF7x_AWVnD",
       "fillStyle": "hachure",
@@ -1695,7 +1722,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160020,
+      "updated": 1681739186335,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1705,12 +1732,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Caso de uso",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 18
     },
     {
       "type": "text",
-      "version": 1059,
-      "versionNonce": 1569178303,
+      "version": 1060,
+      "versionNonce": 964153763,
       "isDeleted": false,
       "id": "9KC4n6TmxkZJ20koCJ7_t",
       "fillStyle": "hachure",
@@ -1731,7 +1759,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160020,
+      "updated": 1681739186339,
       "link": null,
       "locked": false,
       "fontSize": 10.378262779545658,
@@ -1741,12 +1769,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "try:\n    algorithm_name = files.pop(\"algorithm_name\")\n    files_in_dataframes = process_files(files)\n    algorithm = new Algorithm(algorithm_name[\"algorithm_name\"])\n\n    result = Algorithm.start(files_in_dataframe)\n\n    return result\nexcept Exception as Error:\n    raise Exception(srt(Error))",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 125
     },
     {
       "type": "text",
-      "version": 905,
-      "versionNonce": 1910115505,
+      "version": 906,
+      "versionNonce": 400674317,
       "isDeleted": false,
       "id": "I0MIhCT-RsU63vXNZKtyD",
       "fillStyle": "hachure",
@@ -1767,7 +1796,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160020,
+      "updated": 1681739186341,
       "link": null,
       "locked": false,
       "fontSize": 9.18509943808423,
@@ -1777,7 +1806,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se llamaran otros casos de uso.\n",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1871,8 +1901,8 @@
     },
     {
       "type": "text",
-      "version": 1388,
-      "versionNonce": 60251903,
+      "version": 1389,
+      "versionNonce": 712222019,
       "isDeleted": false,
       "id": "TnxPsLVXyPJuDnAxMy4J3",
       "fillStyle": "hachure",
@@ -1893,7 +1923,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160021,
+      "updated": 1681739186346,
       "link": null,
       "locked": false,
       "fontSize": 11.765080179328672,
@@ -1903,7 +1933,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "    Esta función debe devolver la estructura mencionada en el Return anterior\n    Para que esto sea factible cada algoritmo construirá su respuesta en su función.\n    Ejemplo de drivers:\n        def algorithm(files) -> Este files es la estructura inicial file { name, dataframe }\n            Solo tenemos un file asi que para trabar con su dataframe haremos un:\n            file_dataframe = file[\"file_1\"][\"file_content\"]\n            Trabajamos sobre este y luego creamos un json nosotros tal que:\n            file_1 { name: file[\"file_1\"][\"filename\"], content: sorted_file }\n            file_2 { name: \"nuevo fichero generado\", content: horario_conductores}",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 128
     },
     {
       "type": "rectangle",
@@ -1942,8 +1973,8 @@
     },
     {
       "type": "text",
-      "version": 129,
-      "versionNonce": 1819354911,
+      "version": 130,
+      "versionNonce": 603358317,
       "isDeleted": false,
       "id": "HnAJjoLjUucM8ZOS_L7c3",
       "fillStyle": "hachure",
@@ -1962,7 +1993,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109160021,
+      "updated": 1681739186353,
       "link": null,
       "locked": false,
       "fontSize": 109.96687542761504,
@@ -1972,12 +2003,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Arquitectura Hexagonal",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 97
     },
     {
       "type": "text",
-      "version": 477,
-      "versionNonce": 275061257,
+      "version": 478,
+      "versionNonce": 536085731,
       "isDeleted": false,
       "id": "D4IE4MeA7ZM0Cx6YeOvSs",
       "fillStyle": "hachure",
@@ -1998,7 +2030,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074494,
+      "updated": 1681739186355,
       "link": null,
       "locked": false,
       "fontSize": 26.968425394751876,
@@ -2008,12 +2040,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Infraestructura:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 23
     },
     {
       "type": "text",
-      "version": 1144,
-      "versionNonce": 1738024711,
+      "version": 1145,
+      "versionNonce": 216362701,
       "isDeleted": false,
       "id": "Pr69nxl2kMoiGTho-EjxB",
       "fillStyle": "hachure",
@@ -2036,7 +2069,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074495,
+      "updated": 1681739186358,
       "link": null,
       "locked": false,
       "fontSize": 30.66694290019187,
@@ -2046,12 +2079,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Aplicacion:\n    Caso de uso:       \n        -> process_algorithm_files: \n            ",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 141
     },
     {
       "type": "text",
-      "version": 680,
-      "versionNonce": 447148265,
+      "version": 681,
+      "versionNonce": 830959747,
       "isDeleted": false,
       "id": "qtrq-zMBkRcHwKSaRmV9T",
       "fillStyle": "hachure",
@@ -2074,7 +2108,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074496,
+      "updated": 1681739186361,
       "link": null,
       "locked": false,
       "fontSize": 48.54316571055337,
@@ -2084,7 +2118,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Backend",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 42
     },
     {
       "type": "rectangle",
@@ -2120,8 +2155,8 @@
     },
     {
       "type": "text",
-      "version": 909,
-      "versionNonce": 2083237415,
+      "version": 910,
+      "versionNonce": 558370093,
       "isDeleted": false,
       "id": "lILNfQ1qc-SyWxSpHUZpL",
       "fillStyle": "hachure",
@@ -2144,7 +2179,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074497,
+      "updated": 1681739186363,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936603,
@@ -2154,12 +2189,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Statu_code = 200, List of dataframe.toString()",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 978,
-      "versionNonce": 1883958217,
+      "version": 979,
+      "versionNonce": 15493155,
       "isDeleted": false,
       "id": "hFVeWcRb1otoEbsHu6Rzv",
       "fillStyle": "hachure",
@@ -2182,7 +2218,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186365,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936603,
@@ -2192,12 +2228,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code = 406, Raise ValueError",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1237,
-      "versionNonce": 1057050951,
+      "version": 1238,
+      "versionNonce": 545775501,
       "isDeleted": false,
       "id": "6YmBwxvfRUbZvKZeXI1T2",
       "fillStyle": "hachure",
@@ -2220,7 +2257,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186366,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -2230,12 +2267,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> get_available_algotihms:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1045,
-      "versionNonce": 694979241,
+      "version": 1046,
+      "versionNonce": 1947298755,
       "isDeleted": false,
       "id": "E9IBgY7DpX4iHgeCcrOaM",
       "fillStyle": "hachure",
@@ -2258,7 +2296,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186367,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936595,
@@ -2268,12 +2306,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code = 200, List = [string] \n                     (Puede ser vacia)",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 53
     },
     {
       "type": "text",
-      "version": 1104,
-      "versionNonce": 1500876903,
+      "version": 1105,
+      "versionNonce": 551445997,
       "isDeleted": false,
       "id": "fL3h8nyIO4NeEQEdvlbGa",
       "fillStyle": "hachure",
@@ -2296,7 +2335,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186368,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936603,
@@ -2306,12 +2345,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 404, Raise ValueError",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1357,
-      "versionNonce": 1320635785,
+      "version": 1358,
+      "versionNonce": 789904227,
       "isDeleted": false,
       "id": "h6V_HF-amcqtFPTxF5dhG",
       "fillStyle": "hachure",
@@ -2334,7 +2374,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186369,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191867,
@@ -2344,12 +2384,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> get_configuration_file:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1146,
-      "versionNonce": 357886855,
+      "version": 1147,
+      "versionNonce": 894771277,
       "isDeleted": false,
       "id": "FDyU0fFj121OxhR2HDZ4B",
       "fillStyle": "hachure",
@@ -2372,7 +2413,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186369,
       "link": null,
       "locked": false,
       "fontSize": 25.0951100299366,
@@ -2382,12 +2423,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 200, Dict",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1217,
-      "versionNonce": 1197913193,
+      "version": 1218,
+      "versionNonce": 1313183491,
       "isDeleted": false,
       "id": "sDF1b2NQA_2bcC8mZyD7l",
       "fillStyle": "hachure",
@@ -2410,7 +2452,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074498,
+      "updated": 1681739186370,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936603,
@@ -2420,12 +2462,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 404, Raise ValueError",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1412,
-      "versionNonce": 1323033255,
+      "version": 1413,
+      "versionNonce": 1405456045,
       "isDeleted": false,
       "id": "nXkrWXwsfRE-dzog9vKkA",
       "fillStyle": "hachure",
@@ -2448,7 +2491,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074499,
+      "updated": 1681739186371,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -2458,7 +2501,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> get_algorithm_result:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "rectangle",
@@ -2494,8 +2538,8 @@
     },
     {
       "type": "text",
-      "version": 1295,
-      "versionNonce": 122044233,
+      "version": 1296,
+      "versionNonce": 1612824227,
       "isDeleted": false,
       "id": "rD3hz9EdoBzLIm-GF7FnE",
       "fillStyle": "hachure",
@@ -2518,7 +2562,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074499,
+      "updated": 1681739186372,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -2528,7 +2572,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Dominio:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "rectangle",
@@ -2564,8 +2609,8 @@
     },
     {
       "type": "text",
-      "version": 1310,
-      "versionNonce": 649524679,
+      "version": 1311,
+      "versionNonce": 2061054221,
       "isDeleted": false,
       "id": "3eL9gcdC0k-1-zzrRYVO7",
       "fillStyle": "hachure",
@@ -2588,7 +2633,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074499,
+      "updated": 1681739186372,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191867,
@@ -2598,12 +2643,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> Algorithms",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1378,
-      "versionNonce": 2092002857,
+      "version": 1379,
+      "versionNonce": 525857347,
       "isDeleted": false,
       "id": "qf57FaJCvhczPaJoMz6R5",
       "fillStyle": "hachure",
@@ -2626,7 +2672,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074499,
+      "updated": 1681739186373,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -2636,12 +2682,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> Configuration",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 756,
-      "versionNonce": 1946330343,
+      "version": 757,
+      "versionNonce": 403277677,
       "isDeleted": false,
       "id": "FVXVlcOpqAzCEFABQldzQ",
       "fillStyle": "hachure",
@@ -2664,7 +2711,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074499,
+      "updated": 1681739186374,
       "link": null,
       "locked": false,
       "fontSize": 26.96842539475188,
@@ -2674,12 +2721,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> files: algoritmos disponiblres",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 23
     },
     {
       "type": "text",
-      "version": 899,
-      "versionNonce": 1049870601,
+      "version": 900,
+      "versionNonce": 1824960995,
       "isDeleted": false,
       "id": "-xQ7K2U9_ORJsLIALxt_q",
       "fillStyle": "hachure",
@@ -2702,7 +2750,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074500,
+      "updated": 1681739186376,
       "link": null,
       "locked": false,
       "fontSize": 26.96842539475188,
@@ -2712,12 +2760,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "    algorithm.py: Clase que se inicializa con el nombre del \n                algoritmo y con un metodo para iniciarlo \n                pasandole los archivos",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 91
     },
     {
       "type": "text",
-      "version": 1010,
-      "versionNonce": 1984655367,
+      "version": 1011,
+      "versionNonce": 765465037,
       "isDeleted": false,
       "id": "935Hd-to3zcfTtN4OzHs3",
       "fillStyle": "hachure",
@@ -2740,7 +2789,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074500,
+      "updated": 1681739186377,
       "link": null,
       "locked": false,
       "fontSize": 26.968425394751876,
@@ -2750,12 +2799,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "    drivers.json",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 23
     },
     {
       "type": "text",
-      "version": 749,
-      "versionNonce": 2053683177,
+      "version": 750,
+      "versionNonce": 159153539,
       "isDeleted": false,
       "id": "YmqTl0uWg4oEycSXpSM6V",
       "fillStyle": "hachure",
@@ -2778,7 +2828,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074500,
+      "updated": 1681739186377,
       "link": null,
       "locked": false,
       "fontSize": 26.968425394751872,
@@ -2788,12 +2838,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "// Ficheros de configuración de los algoritmos",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 23
     },
     {
       "type": "text",
-      "version": 1516,
-      "versionNonce": 1200477991,
+      "version": 1517,
+      "versionNonce": 951472173,
       "isDeleted": false,
       "id": "o2W1RIur0dFMjsR7gMLTX",
       "fillStyle": "hachure",
@@ -2816,7 +2867,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074500,
+      "updated": 1681739186378,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191856,
@@ -2826,12 +2877,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> get_algoritgm_ description:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1395,
-      "versionNonce": 574345929,
+      "version": 1396,
+      "versionNonce": 280483107,
       "isDeleted": false,
       "id": "OXIQBNdVhQ6ihiiFjkqui",
       "fillStyle": "hachure",
@@ -2854,7 +2906,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074500,
+      "updated": 1681739186379,
       "link": null,
       "locked": false,
       "fontSize": 25.0951100299366,
@@ -2864,12 +2916,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 200, [description, aditional]",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1247,
-      "versionNonce": 238443079,
+      "version": 1248,
+      "versionNonce": 1463141005,
       "isDeleted": false,
       "id": "H4Ibew9ROdOAQbMsAJnlU",
       "fillStyle": "hachure",
@@ -2892,7 +2945,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186379,
       "link": null,
       "locked": false,
       "fontSize": 25.095110029936603,
@@ -2902,7 +2955,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 404, Raise ValueError",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "rectangle",
@@ -2938,8 +2992,8 @@
     },
     {
       "type": "text",
-      "version": 1410,
-      "versionNonce": 1520996777,
+      "version": 1411,
+      "versionNonce": 837236931,
       "isDeleted": false,
       "id": "finjfBTM3r5XNRXdefiRT",
       "fillStyle": "hachure",
@@ -2962,7 +3016,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186380,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -2972,12 +3026,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> Api",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1561,
-      "versionNonce": 1864464743,
+      "version": 1562,
+      "versionNonce": 769124589,
       "isDeleted": false,
       "id": "F1yrAgX6VbJYY6pvfKuUR",
       "fillStyle": "hachure",
@@ -3000,7 +3055,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186381,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -3010,12 +3065,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> Storage/results -> Save last 3 results.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 1571,
-      "versionNonce": 685405321,
+      "version": 1572,
+      "versionNonce": 715728995,
       "isDeleted": false,
       "id": "5IgV0ZIbV0aaFCvt3zYwB",
       "fillStyle": "hachure",
@@ -3038,7 +3094,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186383,
       "link": null,
       "locked": false,
       "fontSize": 30.666942900191863,
@@ -3048,12 +3104,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "-> controllers\n       endpoints que en su mayoría se correspon-\n        den a los casos de uso\n-> server.py\n",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 180
     },
     {
       "type": "text",
-      "version": 1213,
-      "versionNonce": 1067168903,
+      "version": 1214,
+      "versionNonce": 237388621,
       "isDeleted": false,
       "id": "CtQdgU5tfI1cUy8tsIgbY",
       "fillStyle": "hachure",
@@ -3076,7 +3133,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186383,
       "link": null,
       "locked": false,
       "fontSize": 25.0951100299366,
@@ -3086,12 +3143,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 200, Dict",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1291,
-      "versionNonce": 1619852137,
+      "version": 1292,
+      "versionNonce": 13378563,
       "isDeleted": false,
       "id": "a67tjrHYPxeMOoRH3BclB",
       "fillStyle": "hachure",
@@ -3114,7 +3172,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074501,
+      "updated": 1681739186384,
       "link": null,
       "locked": false,
       "fontSize": 25.0951100299366,
@@ -3124,12 +3182,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Status_code  = 500, Raise Exception",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 1152,
-      "versionNonce": 2002881447,
+      "version": 1153,
+      "versionNonce": 1551520173,
       "isDeleted": false,
       "id": "fr5-KDxIop35MAXclJdyT",
       "fillStyle": "hachure",
@@ -3151,7 +3210,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074503,
+      "updated": 1681739186387,
       "link": null,
       "locked": false,
       "fontSize": 16.859391081506867,
@@ -3161,12 +3220,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "En el caso de la capa de aplicación, los casos de usos devolverán los items establecidos anteriormente pero no sabrán nada de tecnología \nHTTP. Serán los controllers de la api los que interpretarán los resultados de los casos de uso y devolverán la payload con su STATUS CODE.\n",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 57
     },
     {
       "type": "text",
-      "version": 851,
-      "versionNonce": 1376495177,
+      "version": 852,
+      "versionNonce": 2085530531,
       "isDeleted": false,
       "id": "ZqSsd1b6dW5Yl5UZdtCrk",
       "fillStyle": "hachure",
@@ -3188,7 +3248,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074503,
+      "updated": 1681739186388,
       "link": "",
       "locked": false,
       "fontSize": 16.85939108150687,
@@ -3198,12 +3258,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Matizando casos de uso:",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 14
     },
     {
       "type": "text",
-      "version": 1911,
-      "versionNonce": 1654619847,
+      "version": 1912,
+      "versionNonce": 905810957,
       "isDeleted": false,
       "id": "zTz2P7S0VRbG41QSReGYB",
       "fillStyle": "hachure",
@@ -3224,7 +3285,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074504,
+      "updated": 1681739186390,
       "link": "",
       "locked": false,
       "fontSize": 19.830674369807603,
@@ -3234,7 +3295,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "    -> Unit_test\n\n    -> Integration_test\n",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 91
     },
     {
       "type": "rectangle",
@@ -3266,8 +3328,8 @@
     },
     {
       "type": "text",
-      "version": 613,
-      "versionNonce": 942798121,
+      "version": 614,
+      "versionNonce": 1633632067,
       "isDeleted": false,
       "id": "t-01Dbk0nc6lgibAJlgzj",
       "fillStyle": "hachure",
@@ -3286,7 +3348,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074504,
+      "updated": 1681739186391,
       "link": null,
       "locked": false,
       "fontSize": 25.49658133260977,
@@ -3296,12 +3358,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Tests",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 22
     },
     {
       "type": "text",
-      "version": 409,
-      "versionNonce": 334630375,
+      "version": 410,
+      "versionNonce": 1453951597,
       "isDeleted": false,
       "id": "ZstuvgLsyR-JIsK9PR6wZ",
       "fillStyle": "hachure",
@@ -3320,7 +3383,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074505,
+      "updated": 1681739186392,
       "link": null,
       "locked": false,
       "fontSize": 11.331813925604344,
@@ -3330,12 +3393,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se testean los casos de uso",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 10
     },
     {
       "type": "text",
-      "version": 482,
-      "versionNonce": 1718315017,
+      "version": 483,
+      "versionNonce": 1784438499,
       "isDeleted": false,
       "id": "HNKwAeM0Al7JpUqQLZPQm",
       "fillStyle": "hachure",
@@ -3354,7 +3418,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074505,
+      "updated": 1681739186393,
       "link": null,
       "locked": false,
       "fontSize": 11.331813925604344,
@@ -3364,12 +3428,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Se testean los controladores",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 10
     },
     {
       "type": "text",
-      "version": 700,
-      "versionNonce": 375765255,
+      "version": 701,
+      "versionNonce": 1061663949,
       "isDeleted": false,
       "id": "OpBd9y_sQUOI8BjAY8kab",
       "fillStyle": "hachure",
@@ -3388,7 +3453,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074505,
+      "updated": 1681739186394,
       "link": null,
       "locked": false,
       "fontSize": 11.331813925604344,
@@ -3398,12 +3463,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Hay algunos comportamientos mockeados ya que no son normales, como por ejemplo\ncuando el servidor no tiene algoritmos disponibles.",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 24
     },
     {
       "type": "text",
-      "version": 846,
-      "versionNonce": 917733097,
+      "version": 847,
+      "versionNonce": 30706307,
       "isDeleted": false,
       "id": "Fng09lybxy7edG8nPxUBd",
       "fillStyle": "hachure",
@@ -3424,7 +3490,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074508,
+      "updated": 1681739186396,
       "link": null,
       "locked": false,
       "fontSize": 189.66300860703387,
@@ -3434,12 +3500,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 166
     },
     {
       "type": "text",
-      "version": 801,
-      "versionNonce": 1800139089,
+      "version": 802,
+      "versionNonce": 460428077,
       "isDeleted": false,
       "id": "rQEJc2FhsLSu6sBYg59p7",
       "fillStyle": "hachure",
@@ -3460,7 +3527,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109172099,
+      "updated": 1681739186397,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -3470,12 +3537,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 809,
-      "versionNonce": 964348031,
+      "version": 810,
+      "versionNonce": 1015431715,
       "isDeleted": false,
       "id": "b_65QmQyD4r7v6C1IZEIv",
       "fillStyle": "hachure",
@@ -3496,7 +3564,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109175178,
+      "updated": 1681739186398,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -3506,12 +3574,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 770,
-      "versionNonce": 721260127,
+      "version": 771,
+      "versionNonce": 1737532813,
       "isDeleted": false,
       "id": "5MmlIK5b-pz4PuVVynGv4",
       "fillStyle": "hachure",
@@ -3532,7 +3601,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680109177079,
+      "updated": 1681739186399,
       "link": null,
       "locked": false,
       "fontSize": 60.96585024603598,
@@ -3542,12 +3611,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 54
     },
     {
       "type": "text",
-      "version": 936,
-      "versionNonce": 1601634343,
+      "version": 937,
+      "versionNonce": 325060035,
       "isDeleted": false,
       "id": "JQ1sfhrc1Cog-70OfOLwa",
       "fillStyle": "hachure",
@@ -3568,7 +3638,7 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1680110074511,
+      "updated": 1681739186401,
       "link": null,
       "locked": false,
       "fontSize": 99.22713988906371,
@@ -3578,7 +3648,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "✅",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 87
     }
   ],
   "appState": {

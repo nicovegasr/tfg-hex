@@ -18,6 +18,7 @@ def timetable_drivers(available_drivers):
         drivers_timetable["Final_Descanso"][i] = drivers_working[i].descanso_final
     return drivers_timetable
 
+
 def get_dataframe(files: dict):
     json_dataframe =  files["file_1"]["file_content"]
     dataframe = pd.read_json(json_dataframe)

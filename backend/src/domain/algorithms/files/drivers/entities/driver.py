@@ -52,7 +52,6 @@ class Driver:
         if (self.lugar == None) or (self.lugar == viaje.estacion_salida) or (self.puede_viaje_vacío(viaje)):
           # Si el conductor no ha sido asignado a una hora o si esta es mas temprana que la hora de inico del viaje actual, el conductor está disponiible
           if (self.hora_final_anterior == None) or (self.hora_final_anterior <= viaje.hora_inicio):
-            # TODO: Ver si el conductor está en su hora de descanso.
             return True
           else:
             return False

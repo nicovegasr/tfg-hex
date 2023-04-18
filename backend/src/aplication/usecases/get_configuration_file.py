@@ -10,7 +10,7 @@ schema = {
         "n_cols": {"type": "array", "items": {"type": "string", "minLength": 1}},
         "cols_types": {"type": "array", "items": {"type": "array", "minItems": 1}},
         "allowed_nulls": {"type": "array", "items": {"type": "string", "enum": ["0", "1"]}},
-        "aditional_description": {"type": "string", "minLength": 1}
+        "aditional_description": {"type": "string", "minLength": 0}
     },
     # Define los campos adicionales permitidos en el archivo JSON
     "additionalProperties": False,

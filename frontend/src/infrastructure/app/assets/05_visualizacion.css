@@ -1,0 +1,72 @@
+#visualizacion {
+  margin: .375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Si el callback de visualizacion está cargando, se hace la animación de cargando.*/
+*[class="visualizacion"][data-dash-is-loading="true"]::before{
+  content: "Loading...";
+  display: inline-block;
+  color: black;
+  visibility: visible;
+  font-family: 'Anton', sans-serif;
+  font-size: calc(0.5em + 0.5vw);
+  padding: .375rem .75rem;  
+  margin: .375rem .75rem;  
+  animation: aparecer-desaparecer 2s infinite;
+}
+
+
+@keyframes aparecer-desaparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.boton-descarga {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  font-family: 'Anton', sans-serif;
+  font-size: calc(0.8em + 0.5vw);
+  padding: .375rem .75rem;  
+  color: greenyellow;
+  box-shadow: 0px 0px 10px #000000;
+  background-color: rgb(43, 43, 43);;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out;
+}
+.boton-descarga:hover, .boton-resultado:active, .boton-resultado:focus {
+  color: rgb(43, 43, 43);;
+  background-color: greenyellow;
+}
+
+.gantt-chart-container {
+  max-width: 100%;
+  position:relative;
+  overflow:hidden;
+}
+
+.gantt-chart-container-2 {
+  max-width: 100%;
+  position:relative;
+  overflow:hidden;
+}
+
+.gantt-chart {
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+}
