@@ -17,5 +17,9 @@ class AlgorithmRepository:
         return algorithm_availables
     
     def process_files(self, files: dict) -> requests:
-        response = requests.post('/process_files', json=files)
-        pass
+        response = requests.post(f"{self.api_url}process_files", json=files)
+        return response
+
+    def get_configuration_file(self, algorithm: str) -> requests:
+        response = requests.get(f"{self.api_url}configuration_file?algorithm_name={algorithm}")
+        return response

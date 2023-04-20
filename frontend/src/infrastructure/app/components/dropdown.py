@@ -1,17 +1,20 @@
 import json
 from dash import html, dcc, callback, Input, Output
-from dash.exceptions import PreventUpdate
 from repositories.algorithm_repository import AlgorithmRepository
 
 
 def dropdown_component() -> html:
-    algoritm_repository = AlgorithmRepository()
-    algorithm_availables_request = algoritm_repository.get_available_algorithms()
-    if (algorithm_availables_request.status_code != 200):
-        error = algorithm_availables_request.content.decode('utf-8')
-        return html.P(className="dropdown-error", children=error)
-    algorithm_availables = json.loads(algorithm_availables_request.content.decode('utf-8'))
-    return dcc.Dropdown(id='dropdown-selection', options=algorithm_availables, placeholder="Seleccione un algoritmo.")
+    try:
+        algoritm_repository = AlgorithmRepository()
+        algorithm_availables_request = algoritm_repository.get_available_algorithms()
+        if (algorithm_availables_request.status_code != 200):
+            error = algorithm_availables_request.content.decode('utf-8')
+            return html.P(className="dropdown-error", children=error)
+        algorithm_availables = json.loads(algorithm_availables_request.content.decode('utf-8'))
+        return dcc.Dropdown(id='dropdown-selection', options=algorithm_availables, placeholder="Seleccione un algoritmo.", clearable=False)
+    except:
+        return html.P(className="dropdown-error", children="There is a problem with server conexion.")
+
 @callback(
     [Output('description', 'children'),
      Output('algorithm_selected', 'data'),

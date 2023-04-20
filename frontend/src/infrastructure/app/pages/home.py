@@ -16,7 +16,7 @@ layout = html.Div(className="global", children=[
         ]),
         html.Div(id='description'),
     ]),
-    html.Div(id="resultado"),
+    html.Div(id="result"),
     html.Div(id="visualizacion", className="visualizacion"),
     dcc.Download(id="descarga"),
     dcc.Store(id="algorithm_selected"),
