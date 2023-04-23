@@ -2,6 +2,7 @@ import dash
 from dash import html, dcc
 from src.infrastructure.app.components.dropdown import dropdown_component
 from src.infrastructure.app.components.uploadfiles import *
+from src.infrastructure.app.components.btn_result import *
 
 dash.register_page(__name__, path='/', title='Inicio')
 
@@ -19,7 +20,9 @@ layout = html.Div(className="global", children=[
     html.Div(id="result"),
     html.Div(id="visualizacion", className="visualizacion"),
     dcc.Download(id="descarga"),
+
     dcc.Store(id="algorithm_selected"),
-    html.P(id="no-output")
+    dcc.Store(id="configuration_file"),
+    dcc.Store(id="uploaded_files"),
 
 ])
