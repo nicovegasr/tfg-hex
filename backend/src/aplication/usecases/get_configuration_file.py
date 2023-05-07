@@ -12,8 +12,6 @@ schema = {
         "allowed_nulls": {"type": "array", "items": {"type": "string", "enum": ["0", "1"]}},
         "aditional_description": {"type": "string", "minLength": 0}
     },
-    # Define los campos adicionales permitidos en el archivo JSON
-    "additionalProperties": False,
     # Define los campos requeridos en el archivo JSON
     "required": ["name", "n_files", "n_cols", "cols_types", "allowed_nulls", "aditional_description"]
 }

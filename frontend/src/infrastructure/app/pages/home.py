@@ -24,5 +24,6 @@ layout = html.Div(className="global", children=[
     dcc.Store(id="algorithm_selected"),
     dcc.Store(id="configuration_file"),
     dcc.Store(id="uploaded_files"),
+    dcc.Store(id="uploaded_files_no_processed"),
 
 ])

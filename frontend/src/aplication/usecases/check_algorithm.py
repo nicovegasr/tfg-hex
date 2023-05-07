@@ -1,18 +1,11 @@
-import json
+import importlib
+from src.domain.entitities.check.default import DefaultCheck
+from .split_files import split_files_and_filenames
 
-from domain.entities.check import Check
-
-def split_files_and_filenames(files: dict):
-    filenames = []
-    file_contents = []
-    for file_key in files:
-        file = files[file_key]
-        filenames.append(file['filename'])
-        file_contents.append(file['file_content'])
-    print(filenames)
-    return filenames, file_contents
-
-def check_algorithm(files: dict, configuration_file: dict) -> None:
+def check_algorithm(files: dict, configuration_file: dict, algorithm_name: str) -> None:
     filenames, files_contents = split_files_and_filenames(files)
-    checker = Check(filenames, files_contents, configuration_file)
-    return None 
+    checker = DefaultCheck(filenames, files_contents, configuration_file)
+    checker.start()
+    if importlib.util.find_spec(f"src.domain.entitities.check.{algorithm_name}"):
+        algorithm_checker = importlib.import_module(f"src.domain.entitities.check.{algorithm_name}")
+        algorithm_checker.start(filenames, files_contents, configuration_file)
