@@ -5,4 +5,4 @@
   "cols_types": [["Datetime", "int", "Datetime", "Datetime", "int"]],
   "allowed_nulls": ["0"],
   "aditional_description": "Este algoritmo se encarga de minimizar el numero de conductores dado un dataset de viajes que parten de un punto A hacia un punto B."
-} 
+}

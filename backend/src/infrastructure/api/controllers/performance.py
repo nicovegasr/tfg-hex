@@ -1,5 +1,6 @@
 import json
 from flask import make_response, request
+
 from aplication.usecases.get_algorithm_result import get_algorithm_result
 
 def algorithm_performance():

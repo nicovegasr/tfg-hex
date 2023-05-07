@@ -1,5 +1,6 @@
 from process_algorithm_files import process_algorithm_files
 from domain.algorithms.algorithm import Algorithm
+
 def get_algorithm_result(files: dict):
     try:
         algorithm_name = files.pop("algorithm_name", None)

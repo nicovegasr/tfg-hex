@@ -23,6 +23,5 @@ app.add_url_rule('/process_files', 'process_files', process_files, methods=['POS
 app.add_url_rule('/configuration_file', 'configuration_file', configuration_file, methods=['GET'])
 app.add_url_rule('/algorithm_performance', 'algorithm_performance', algorithm_performance, methods=['POST'])
 
-
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=3000, debug=True)

@@ -1,6 +1,6 @@
 # **Trabajo final de grado**
 
-Para el procesado de algoritmos de la interfaz visual de este trabajo final de grado se ha creado un servidor siguiendo la arquitectura hexagonal, cubierto por testing y con principios de código sostenible intentando que el código se explique por sí mismo con el nombre de las distintas variables y funnciones. A continuacion podemos ver un esquema donde se refleja la estructura de carpetas y el flujo de los endpoints para que se conecte con el frontend
+Para el procesado de algoritmos de la interfaz visual de este trabajo final de grado se ha creado un servidor siguiendo la arquitectura hexagonal, cubierto por testing y con principios de código sostenible intentando que el código se explique por sí mismo con el nombre de las distintas variables y funciones. A continuacion podemos ver un esquema donde se refleja la estructura de carpetas y el flujo de los endpoints para que se conecte con el frontend
 
 ![Planteamieto de la arquitectura hexagonal en el backend](./docs/images/backend_hex.png)
 
@@ -10,6 +10,24 @@ Para el procesado de algoritmos de la interfaz visual de este trabajo final de g
 Se han planteado tests unitarios para los casos de uso de la capa de aplicacion y tests de integracion que prueban los controladores del servidor.
 
 ![Flujo de endpoints para la conexcion con el frontend](./docs/images/test.png)
+
+Para el testing en este servidor se han añadido dos ficheros .bat ya que se ha desarrollado en windows, dichos scripts se pueden encontrar en la carpeta **test** y son los siguientes:
+1. **execute_tests.bat**: Se encarga de ejecutar todos los tests, tanto los unitarios como los de integracion y muestra por consola si fueron ejecutados correctamente o no.
+
+```powershell
+python -m unittest discover -vs  .\unit_test\ -p "*_test.py"   
+python -m unittest discover -vs .\integration_test\ -p "*_test.py"
+```
+![Ejecucion de tests](./docs/images/execute_test.png)
+
+2. **coverage_test.bat**: Se encarga de medir el coverage de los test ejecutando tanto los unitarion como los de integracion.
+
+```powershell
+python -m coverage run -m unittest discover -s .\unit_test\ -p "*_test.py"   
+python -m coverage run -m unittest discover -s .\integration_test\ -p "*_test.py"
+python -m  coverage report
+```
+![Coverage de tests](./docs/images/coverage_test.png)
 
 ## **Estructura de los archivos de configuración**
 
@@ -25,6 +43,9 @@ La estructura que deben seguir los archivos de configuracion para la creacion de
   "aditional_description": "Descripcion aicional que se quiera proporcionar en formato texto"
 } 
 ```
+
+## **Consideraciones**
+A pesar de estar desarrollado en windows se ha trabajado de tal forma que lo unico que se debe cambiar para Linux seria la extension de los archivos .bat de test, de resto, a priori, no deberia dar ningun problema.
 
 ## **Paquetes necesario**
 * `pip install pandas`

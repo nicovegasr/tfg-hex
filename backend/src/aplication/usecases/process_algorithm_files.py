@@ -1,7 +1,6 @@
 
 import base64
 import io
-
 import pandas as pd
 
 def process_algorithm_files(files: dict) -> str or list:
@@ -23,5 +22,3 @@ def process_algorithm_files(files: dict) -> str or list:
          raise ValueError(f"File {filename_result}: not supported type.") 
       file["file_content"] = decoded_file.to_json()
     return files
-
-

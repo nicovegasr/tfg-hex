@@ -12,13 +12,12 @@ class Algorithm:
         algorithm_result = importlib.import_module(
             f"files.{self.algorithm_name}.algorithm")
         result = algorithm_result.algorithm(files)
-        formated_result = self.formatear_archivos(result)
+        formated_result = self.formating_result(result)
         return formated_result
 
-    def formatear_archivos(self, files: dict):
+    def formating_result(self, files: dict):
         filenames, file_contents = self.split_files_and_filenames(files)
         formated_result: list[dict] = []
-        print(file_contents)
         for file_index in range(len(file_contents)):
             file_in_dataframe: pd.DataFrame = file_contents[file_index]
             file_in_dataframe['Fichero_Origen'] = filenames[file_index]
