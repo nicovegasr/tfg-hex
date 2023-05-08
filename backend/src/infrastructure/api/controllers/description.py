@@ -1,7 +1,9 @@
 import json
+
 from flask import make_response, request
 
-from src.aplication.usecases.get_algorithm_description import get_algorithm_description
+from aplication.usecases.get_algorithm_description import get_algorithm_description
+
 
 def description():
     try:
