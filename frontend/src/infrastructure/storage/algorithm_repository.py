@@ -1,18 +1,22 @@
 import datetime
 import os
-
+import pandas as pd
+import zipfile
+import io
 
 class AlgorithmRepository:
-    @staticmethod
-    def save(files: dict):
-        path = os.path.dirname(os.path.realpath(__file__))
-        parent_dir = path.rsplit("/storage", 1)[0] + "/storage/results"
-        directory = datetime.datetime.now().strftime("%m-%d-%Y-%H-%M-%S")
-        path = os.path.join(parent_dir, directory)
-        os.mkdir(path)
-        for file_number, file in enumerate(files):
-            file.to_csv(f"{path}/resultado{file_number}.csv", index=False)
+    storage_dir = os.path.dirname(os.path.realpath(__file__)) + "/results"
 
     @staticmethod
+    def save(files: list[dict]):
+        directory_name = datetime.datetime.now().strftime("%m-%d-%Y-%H-%M-%S")
+        with zipfile.ZipFile(f'{AlgorithmRepository.storage_dir}/{directory_name}.zip', 'w') as myzip:
+            for file_index, file in enumerate(files):
+                dataframe_json = pd.read_json(file)
+                csv_buffer = pd.DataFrame.to_csv(dataframe_json, index=False)
+                myzip.writestr(f'file_{file_index + 1}.csv', csv_buffer)
+    
+    @staticmethod
     def get_last_result():
-        pass
+        return (AlgorithmRepository.storage_dir + "/" + os.listdir(AlgorithmRepository.storage_dir)[-1])
+        

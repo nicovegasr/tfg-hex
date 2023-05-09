@@ -4,6 +4,7 @@ from dash import ALL, Input, Output, callback, html
 
 from aplication.usecases.check_algorithm import check_algorithm
 from aplication.usecases.get_visualizer import get_visualizer
+from infrastructure.storage.algorithm_repository import AlgorithmRepository
 from infrastructure.http_requesters.algorithm_http_requester import AlgorithmHttpRequester
 
 
@@ -49,9 +50,12 @@ def show_visualizer_and_download_buttom(
             raise Exception(
                 f"Algo ha ido mal con la ejecución del algoritmo, revisa bien los datos proporcionados: {algorithm_result_request.content.decode('utf-8')}"
             )
+        algorithm_result_decode = algorithm_result_request.content.decode("utf-8")
+        algorithm_result_decode_in_json = json.loads(algorithm_result_decode)
         visualizer = get_visualizer(
-            algorithm_result_request.content.decode("utf-8"), algorithm_name
+            algorithm_result_decode_in_json, algorithm_name
         )
+        AlgorithmRepository.save(algorithm_result_decode_in_json)
         return [visualizer, {"visibility": "visible"}]
     except Exception as error:
         return [

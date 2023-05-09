@@ -4,6 +4,7 @@ from dash import dcc, html
 from infrastructure.app.components.btn_result import *
 from infrastructure.app.components.dropdown import dropdown_component
 from infrastructure.app.components.uploadfiles import *
+from infrastructure.app.components.btn_download import *
 
 dash.register_page(__name__, path="/", title="Inicio")
 

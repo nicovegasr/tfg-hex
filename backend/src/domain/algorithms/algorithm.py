@@ -26,7 +26,7 @@ class Algorithm:
             file_in_dataframe["Hora_ejecucion"] = datetime.datetime.now().strftime(
                 "%m/%d/%Y-%H:%M:%S"
             )
-            file_in_json = file_in_dataframe.to_dict()
+            file_in_json = file_in_dataframe.to_json()
             formated_result.append(file_in_json)
         return formated_result
 

@@ -16,11 +16,10 @@ def add_download_button():
     )
 
 
-def get_visualizer(files, algorithm_name):
-    files_in_json: list = json.loads(files)
+def get_visualizer(files_in_json: list[dict], algorithm_name: str):
     files_in_dataframe = []
     for file in files_in_json:
-        files_in_dataframe.append(pd.DataFrame.from_dict(file))
+        files_in_dataframe.append(pd.read_json(file))
     if importlib.util.find_spec(f"src.domain.entitities.visualizer.{algorithm_name}"):
         algorithm_visualizer_module = importlib.import_module(
             f"src.domain.entitities.visualizer.{algorithm_name}"
