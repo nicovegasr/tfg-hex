@@ -30,7 +30,6 @@ schema = {
 
 def get_configuration_file(algorithm: str) -> dict or ValueError:
     path = os.path.dirname(os.path.realpath(__file__))
-    print(path)
     path = path.rsplit("aplication", 1)[0] + "domain/configuration/"
     json_path = path + algorithm + ".json"
     try:

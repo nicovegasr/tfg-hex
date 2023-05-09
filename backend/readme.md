@@ -11,24 +11,12 @@ Se han planteado tests unitarios para los casos de uso de la capa de aplicacion 
 
 ![Flujo de endpoints para la conexcion con el frontend](./docs/images/test.png)
 
-Para el testing en este servidor se han añadido dos ficheros .bat ya que se ha desarrollado en windows, dichos scripts se pueden encontrar en la carpeta **test** y son los siguientes:
-1. **execute_tests.bat**: Se encarga de ejecutar todos los tests, tanto los unitarios como los de integracion y muestra por consola si fueron ejecutados correctamente o no.
+Para el testing en este servidor se puede usar el comando `make tests` que ejecuta las siguientes funcionalidades:
 
-```powershell
-python -m unittest discover -vs  .\unit_test\ -p "*_test.py"   
-python -m unittest discover -vs .\integration_test\ -p "*_test.py"
-```
-![Ejecucion de tests](./docs/images/execute_test.png)
+1. **Ejecución de tests**: Se encarga de ejecutar todos los tests, tanto los unitarios como los de integracion y muestra por consola si fueron ejecutados correctamente o no. Además muestra el coverage de los distintos tests y genera un htmlcov donde se puede consultar el coverage de toddo el código:
 
-2. **coverage_test.bat**: Se encarga de medir el coverage de los test ejecutando tanto los unitarion como los de integracion.
-
-```powershell
-python -m coverage run -m unittest discover -s .\unit_test\ -p "*_test.py"   
-python -m coverage run -m unittest discover -s .\integration_test\ -p "*_test.py"
-python -m  coverage report
-```
-![Coverage de tests](./docs/images/coverage_test.png)
-
+![make tests](./docs/images/make_tests.png)
+![htmlcov index](./docs/images/htmlcov.png)
 ## **Estructura de los archivos de configuración**
 
 La estructura que deben seguir los archivos de configuracion para la creacion de nuevos algoritmo es la siguiente:
@@ -44,19 +32,27 @@ La estructura que deben seguir los archivos de configuracion para la creacion de
 } 
 ```
 
-## **Iniciar la aplicación""
+## **Iniciar la aplicación**
 
 Lo primero es instalar pyenv y pipenv con los siguientes comandos:
 
 ```bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
+```bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+```bash
 source ~/.zshrc
+```
+```bash
 sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+```bash
 python -m pip install -U pip
 pip install pipenv
 ```
@@ -73,3 +69,4 @@ En caso de querer ejecutar los tests podemos hacer:
 ```bash
 make tests
 ```
+## **Iniciar la aplicación con docker**
