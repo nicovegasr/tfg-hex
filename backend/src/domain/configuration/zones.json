@@ -1,0 +1,9 @@
+{ 
+  "name": "zones",
+  "n_files": "2",
+  "n_cols": ["10", "4"],  
+  "cols_types": [["int", "int", "int", "int", "float", "float", "float", "float", "float", "float"], ["int", "int", "int", "int"]],
+  "allowed_nulls": ["1", "0"],
+  "aditional_description": "Algoritmo de zonas."
+
+}

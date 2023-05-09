@@ -9,11 +9,11 @@ class Algorithm:
     def __init__(self, name) -> None:
         self.algorithm_name = name
 
-    def start(self, files):
+    def start(self, *arguments):
         algorithm_result = importlib.import_module(
             f"domain.algorithms.files.{self.algorithm_name}.algorithm"
         )
-        result = algorithm_result.algorithm(files)
+        result = algorithm_result.algorithm(arguments)
         formated_result = self.formating_result(result)
         return formated_result
 

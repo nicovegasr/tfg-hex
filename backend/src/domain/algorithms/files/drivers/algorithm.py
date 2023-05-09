@@ -1,3 +1,4 @@
+import json
 from .entities.driver import Driver
 from .entities.travel import Travel
 
@@ -7,7 +8,8 @@ from .utils.result_response import result_response
 from .utils.timetable_drivers import timetable_drivers
 
 
-def algorithm(files):
+def algorithm(*arguments):
+    files = (arguments[0][0])
     filename = files["file_1"]["filename"]
     file = get_dataframe(files)
     sorted_file = format_and_sort_dataframe(file)
