@@ -3,4 +3,22 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-.vscode/
+*.iml
+dumps/
+__pycache__
+.env
+.venv/
+.python-version
+
+.pipenv-sync-date
+.cache/
+.coverage
+.pytest_cache
+.hypothesis/
+
+.DS_Store
+.vscode
+.idea
+.htmlcov
+
+*.Identifier
