@@ -44,13 +44,32 @@ La estructura que deben seguir los archivos de configuracion para la creacion de
 } 
 ```
 
-## **Consideraciones**
-A pesar de estar desarrollado en windows se ha trabajado de tal forma que lo unico que se debe cambiar para Linux seria la extension de los archivos .bat de test, de resto, a priori, no deberia dar ningun problema.
+## **Iniciar la aplicación""
 
-## **Paquetes necesario**
-* `pip install pandas`
-* `pip install json`
-* `pip install jsonschema`
-* `pip install flask`
+Lo primero es instalar pyenv y pipenv con los siguientes comandos:
 
-** Faltan
+```bash
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+python -m pip install -U pip
+pip install pipenv
+```
+
+Con esto hecho, podremos simplemente usar nuestro makefile con los comandos que necesitemos:
+
+```bash
+make setup
+make run-server
+```
+
+En caso de querer ejecutar los tests podemos hacer:
+
+```bash
+make tests
+```
