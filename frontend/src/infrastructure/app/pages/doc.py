@@ -5,6 +5,7 @@ from dash import dcc, html
 dash.register_page(__name__, path="/doc", title="Documentacion")
 
 backend_video = "assets" + "/backend_algorithm_add.mp4"
+frontend_video = "assets" + "/frontend_algorithm_add.mp4"
 
 layout = html.Div(
     className="docs-table",
@@ -55,7 +56,8 @@ layout = html.Div(
 
                         """
                     ),
-                    html.Video(src=backend_video,controls=True, id="backend")
+                    html.Video(src=backend_video,controls=True, id="backend-video"),
+                    html.Video(src=frontend_video,controls=True, id="frontend-video")
                 ],
             )
         ])

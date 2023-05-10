@@ -23,12 +23,12 @@ La estructura que deben seguir los archivos de configuracion para la creacion de
 
 ```json
  { 
-  "name": "Nombre del archivo de configuracion",
+  "name": "Nombre del algoritmo",
   "n_files": "Numero de ficheros a subir, excel o csv.",
   "n_cols": ["Primer nº de columnas para el archivo nº1", "Segundo nº de columna para el archivo nº2"],  
   "cols_types": [["Tipo de la primera columna del primer archivo", "..."], ["Tipo de la primera columna del segundo archivo", "..."]],
   "allowed_nulls": ["0: No se permiten nulls en el primer archivo", "1: Se permiten nulls en el segundo archivo"],
-  "aditional_description": "Descripcion aicional que se quiera proporcionar en formato texto"
+  "aditional_description": "Descripcion adicional que se quiera proporcionar en formato texto"
 } 
 ```
 
