@@ -3,14 +3,14 @@ import plotly.express as px
 from dash import dcc, html
 
 
-def visualizer(archivos):
-    archivo = archivos[0]
+def visualizer(files: list[pd.DataFrame]):
+    file = files[0]
     df = pd.DataFrame()  # Crear dataframe vacío
-    for i in range(archivo.shape[0]):
-        hora_inicio = archivo["Fecha_Salida"][i]
-        hora_final = archivo["Fecha_Llegada"][i]
-        conductor = archivo["conductor_id"][i]
-        if archivo["Direccion"][i] == 11:
+    for i in range(file.shape[0]):
+        hora_inicio = file["Fecha_Salida"][i]
+        hora_final = file["Fecha_Llegada"][i]
+        conductor = file["conductor_id"][i]
+        if file["Direccion"][i] == 11:
             estacion_salida = " Estacion de Salida: A"
         else:
             estacion_salida = "Estacion de Salida: B"
@@ -33,13 +33,13 @@ def visualizer(archivos):
         title="Viajes",
     )
 
-    # Siguiente archivo.
-    archivo = archivos[1]
+    # Siguiente file.
+    file = files[1]
     df = pd.DataFrame()  # Crear dataframe vacío
-    for i in range(archivo.shape[0]):
-        hora_inicio = pd.to_datetime(archivo["Inicio_Descanso"][i], errors="coerce")
-        hora_final = pd.to_datetime(archivo["Final_Descanso"][i], errors="coerce")
-        conductor = archivo["Conductor"][i]
+    for i in range(file.shape[0]):
+        hora_inicio = pd.to_datetime(file["Inicio_Descanso"][i], errors="coerce")
+        hora_final = pd.to_datetime(file["Final_Descanso"][i], errors="coerce")
+        conductor = file["Conductor"][i]
         row = {
             "Inicio de descanso": hora_inicio,
             "Final de descanso": hora_final,

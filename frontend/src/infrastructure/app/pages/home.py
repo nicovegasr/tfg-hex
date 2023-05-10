@@ -1,6 +1,7 @@
 import dash
 from dash import dcc, html
 
+from infrastructure.app.dynamic_visualizers.zones.zones_callback import *
 from infrastructure.app.components.btn_result import *
 from infrastructure.app.components.dropdown import dropdown_component
 from infrastructure.app.components.uploadfiles import *
@@ -33,9 +34,11 @@ layout = html.Div(
         html.Div(id="result"),
         html.Div(id="visualizacion", className="visualizacion"),
         dcc.Download(id="descarga"),
+        
         dcc.Store(id="algorithm_selected"),
         dcc.Store(id="configuration_file"),
         dcc.Store(id="uploaded_files"),
         dcc.Store(id="uploaded_files_no_processed"),
+        dcc.Store(id="algorithm_request_body")
     ],
 )

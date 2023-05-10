@@ -9,7 +9,8 @@ def algorithm(*arguments):
     full_dataframe_json = json.loads(arguments[0][0]["file_1"]["file_content"])
     paradas_max_pasajeros_dataframe_json = json.loads(arguments[0][0]["file_2"]["file_content"])
     try:
-        set_values_dataframe = json.loads(arguments[0][0]["file_3"]["file_content"])
+        set_values_dataframe_with_no_format = json.loads(arguments[0][0]["file_3"]["file_content"])
+        set_values_dataframe = {set_values_dataframe_with_no_format['parameter'][key]: set_values_dataframe_with_no_format['value'][key] for key in set_values_dataframe_with_no_format['parameter']}
         passenger_threshold: float = float(set_values_dataframe["passenger_threshold"])
         max_km_h: int = int(set_values_dataframe["max_km_h"])
         ratio_time_pass_thres: int = int(set_values_dataframe["ratio_time_pass_thres"])

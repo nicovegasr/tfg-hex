@@ -1,7 +1,7 @@
 from dash import dash_table, html
+import pandas as pd
 
-
-def visualizer(files):
+def visualizer(files: list[pd.DataFrame]):
     tables = []
     for file in files:
         table = dash_table.DataTable(

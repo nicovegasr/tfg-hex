@@ -17,7 +17,10 @@ def create_algorithm_body(algorithm_name: str, algorithm_files: dict):
 
 
 @callback(
-    [Output("visualizacion", "children"), Output("visualizacion", "style")],
+    [Output("visualizacion", "children"),
+     Output("visualizacion", "style"),
+     Output("algorithm_request_body", "data")
+    ],
     [
         Input({"type": "boton", "index": ALL}, "n_clicks"),
         Input("algorithm_selected", "data"),
@@ -34,14 +37,15 @@ def show_visualizer_and_download_buttom(
     files_no_processed_in_storage: dict,
 ):
     if configuration_file_in_storage is None:
-        return [None, {"visibility": "hidden"}]
+        return [None, {"visibility": "hidden"}, None]
     if click[0] == 0:
-        return [None, {"visibility": "hidden"}]
+        return [None, {"visibility": "hidden"}, None]
     try:
         files_in_json = json.loads(files_in_storage["data"])
         configuration_file_in_json = json.loads(configuration_file_in_storage["data"])
         algorithm_name = algorithm_selected["data"]
         check_algorithm(files_in_json, configuration_file_in_json, algorithm_name)
+
         body = create_algorithm_body(
             algorithm_name, files_no_processed_in_storage["data"]
         )
@@ -56,11 +60,11 @@ def show_visualizer_and_download_buttom(
             algorithm_result_decode_in_json, algorithm_name
         )
         AlgorithmRepository.save(algorithm_result_decode_in_json)
-        return [visualizer, {"visibility": "visible"}]
+        return [visualizer, {"visibility": "visible"}, {"data": body}]
     except Exception as error:
         return [
             html.P(
                 style={"color": "red", "background-color": "white"}, children=str(error)
             ),
-            {"visibility": "visible"},
+            {"visibility": "visible"}, None
         ]
