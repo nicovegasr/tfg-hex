@@ -69,4 +69,5 @@ En caso de querer ejecutar los tests podemos hacer:
 ```bash
 make tests
 ```
-## **Iniciar la aplicación con docker**
+
+> Se recomienda usar docker compose para inicializar toda la aplicación.

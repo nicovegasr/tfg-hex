@@ -42,3 +42,4 @@ Con esto hecho, podremos simplemente usar nuestro makefile con los comandos que 
 make setup
 make run-server
 ```
+> Se recomienda usar docker compose para inicializar la app, en caso contrario solo se debe tener en cuenta que la url del backend es obtenida por medio de una variable de entorno: BACKEND_URL.

@@ -1,8 +1,8 @@
 import requests
-
+import os
 
 class AlgorithmHttpRequester:
-    api_url = "http://127.0.0.1:3000/"
+    api_url = os.environ.get("BACKEND_URL")
 
     @staticmethod
     def get_available_algorithms() -> requests:

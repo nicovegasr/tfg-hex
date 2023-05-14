@@ -28,5 +28,4 @@ server.layout = html.Div(
     ]
 )
 # Iniciamos la aplicación.
-if __name__ == "__main__":
-    server.run_server(debug=True)
+server.run_server(debug=True, host='0.0.0.0')

@@ -20,10 +20,10 @@ def dropdown_component() -> html:
             placeholder="Seleccione un algoritmo.",
             clearable=False,
         )
-    except:
+    except Exception as error:
         return html.P(
             className="dropdown-error",
-            children="There is a problem with server conexion.",
+            children=f"There is a problem with server conexion: {str(error)}",
         )
 
 
