@@ -13,5 +13,5 @@ def get_algorithm_description(configuration_file: dict) -> list:
                 f'Descripcion adicional: {configuration_file["aditional_description"]}'
             )
         return [description, aditional_description]
-    except:
-        raise ValueError("There is a problem with configuration file.")
+    except Exception as error:
+        raise ValueError(f"There is a problem with algorithm description: {str(error)}")
