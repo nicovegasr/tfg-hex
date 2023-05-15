@@ -1,17 +1,16 @@
 from aplication.usecases.get_configuration_file import get_configuration_file
 
 
-def get_algorithm_description(algorithm_name: str) -> list:
+def get_algorithm_description(configuration_file: dict) -> list:
     try:
-        data = get_configuration_file(algorithm_name)
-        description = f'Descripcion: Para que el algoritmo funcione debe introducir {data["n_files"]} archivos. '
-        for i in range(int(data["n_files"])):
+        description = f'Descripcion: Para que el algoritmo funcione debe introducir {configuration_file["n_files"]} archivos. '
+        for i in range(int(configuration_file["n_files"])):
             nulls = "permitidos"
-            if data["allowed_nulls"][i] == 0:
+            if configuration_file["allowed_nulls"][i] == 0:
                 nulls = "prohibidos"
-            description += f'El fichero  numero {i+1}: debe tener {data["n_cols"][i]} columna(s). Los tipos deben ser: {data["cols_types"][i]} y los nulos estan {nulls}. '
+            description += f'El fichero  numero {i+1}: debe tener {configuration_file["n_cols"][i]} columna(s). Los tipos deben ser: {configuration_file["cols_types"][i]} y los nulos estan {nulls}. '
             aditional_description = (
-                f'Descripcion adicional: {data["aditional_description"]}'
+                f'Descripcion adicional: {configuration_file["aditional_description"]}'
             )
         return [description, aditional_description]
     except:
